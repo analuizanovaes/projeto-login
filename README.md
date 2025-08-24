@@ -43,7 +43,7 @@ login-system/
 3. **Teste o login**:
    - Preencha com um e-mail válido
    - Use uma senha que atenda aos requisitos
-   - Clique em "Sign In"
+   - Clique em "Login"
 
 📱 Layout Responsivo
 
