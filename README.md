@@ -1,102 +1,134 @@
-**README - Sistema de Login**
+# 🔐 Sistema de Cadastro e Login Responsivo
 
-🔐 Sistema de Login Responsivo
+Um sistema completo de autenticação com páginas de login e cadastro, desenvolvido com design moderno e totalmente responsivo.
 
-Um formulário de login moderno e responsivo com validação de campos e design adaptativo para diferentes dispositivos.
+## ✨ Funcionalidades
 
- ✨ Funcionalidades
+### 📋 Página de Cadastro (`signup.html`)
+- **Formulário de registro** com validação em tempo real
+- **Verificação de senha** - Confirmação de correspondência entre senhas
+- **Requisitos de senha forte**:
+  - Mínimo de 8 caracteres
+  - Pelo menos 1 letra maiúscula (A-Z)
+  - Pelo menos 1 letra minúscula (a-z)
+  - Pelo menos 1 número (0-9)
+  - Pelo menos 1 caractere especial (@$!%*?&)
+- **Design responsivo** que se adapta a todos os dispositivos
+- **Navegação integrada** entre login e cadastro
 
-- **Design Responsivo** - Adapta-se perfeitamente a desktop, tablet e mobile
-- **Validação de Campos** - Verificação de e-mail e requisitos de senha
-- **Efeitos Visuais** - Transições suaves e feedback visual
-- **Gradiente Moderno** - Design atraente com cores atuais
-- **Validação de Senha Forte** - Exige:
-  - Mínimo 8 caracteres
-  - 1 letra maiúscula
-  - 1 letra minúscula  
-  - 1 número
-  - 1 caractere especial (@$!%*?&)
+### 🔐 Página de Login (`index.html`)
+- **Interface intuitiva** para autenticação de usuários
+- **Validação de campos** para e-mail e senha
+- **Link para cadastro** para novos usuários
+- **Design consistente** com a página de cadastro
 
-🛠️ Tecnologias Utilizadas
+## 🛠️ Tecnologias Utilizadas
 
-- **HTML5** - Estrutura semântica
-- **CSS3** - Estilização com Flexbox, Gradientes e Media Queries
-- **JavaScript** - Validação e interatividade do formulário
-- **Google Fonts** - Fontes Inter e Montserrat
+- **HTML5** - Estrutura semântica e acessível
+- **CSS3** - Estilização avançada com Flexbox, Gradientes e Media Queries
+- **JavaScript** - Validações e interatividade do formulário
+- **Google Fonts** - Família de fontes Poppins para melhor legibilidade
 
- 📁 Estrutura do Projeto
+## 📁 Estrutura do Projeto
 
-login-system/
+```
+sistema-autenticacao/
 │
-├── index.html          # Arquivo principal
+├── index.html          # Página de login
+├── signup.html         # Página de cadastro (nova)
 ├── assets/
 │   ├── styles/
 │   │   └── style.css   # Estilos (opcional)
 │   └── images/
-│       └── login-illustration.svg  # Ilustração do login
-└── README.md           # Este arquivo
+│       └── Sign up-amico.svg  # Ilustração do cadastro
+└── README.md           # Documentação
 ```
-🚀 Como Usar
 
-1. **Faça o download dos arquivos**
-2. **Abra o arquivo `index.html`** no seu navegador
-3. **Teste o login**:
-   - Preencha com um e-mail válido
-   - Use uma senha que atenda aos requisitos
-   - Clique em "Login"
+## 🚀 Como Utilizar
 
-📱 Layout Responsivo
+1. **Faça o download** de todos os arquivos
+2. **Abra o arquivo `index.html`** no navegador para acessar a página de login
+3. **Clique em "Create account"** para ser redirecionado para a página de cadastro
+4. **Preencha o formulário** com:
+   - Nome completo
+   - E-mail válido
+   - Senha forte (atendendo aos requisitos)
+   - Confirmação de senha (deve ser idêntica à senha)
+5. **Clique em "Sign up"** para finalizar o cadastro
 
-- **Desktop**: Layout dividido em duas colunas (imagem + formulário)
-- **Mobile**: Layout empilhado com fundo rosa sólido
+## 📱 Layout Responsivo
 
-🎨 Personalização
+### Desktop
+- Layout dividido em duas colunas (formulário + ilustração)
+- Experiência imersiva com gradiente de fundo
+- Espaçamento adequado entre elementos
 
-Para modificar as cores, edite estas variáveis no CSS:
+### Mobile
+- Layout empilhado em coluna única
+- Ilustração acima do formulário
+- Campos de entrada otimizados para touch
+- Fontes com tamanho aumentado para melhor legibilidade
+
+## 🎨 Personalização
+
+Para modificar o aspecto visual, edite as seguintes propriedades no CSS:
 
 ```css
-/* Gradiente do fundo */
-background: linear-gradient(135deg, #6366F1, #A855F7, #EC4899);
+/* Cores principais */
+--primary-color: #7e22ce;
+--secondary-color: #a855f7;
+--accent-color: #ec4899;
 
-/* Cor do lado esquerdo */
-background: #7C3AED;
+/* Gradiente de fundo */
+background: linear-gradient(135deg, #a855f7, #7e22ce);
 
-/* Cor de fundo para mobile */
-background: #C350D1;
+/* Cores dos botões */
+background: linear-gradient(135deg, #ec4899, #a855f7);
 ```
-🔧 Funcionalidades Técnicas
 
-- Validação de e-mail nativa do HTML5
-- Pattern validation para senha forte
-- Prevenção de envio padrão do formulário
-- Feedback visual nos campos
-- Design responsivo com media queries
+## 🔧 Funcionalidades Técnicas
 
-📋 Requisitos de Senha
+### Validações Implementadas
+- **Validação de e-mail** nativa do HTML5
+- **Pattern validation** para senha forte
+- **Verificação de correspondência** entre senha e confirmação
+- **Prevenção de envio** com campos inválidos
+- **Feedback visual** para campos com erro
 
-A senha deve conter:
-- ✓ Mínimo 8 caracteres
-- ✓ Pelo menos 1 letra maiúscula (A-Z)
-- ✓ Pelo menos 1 letra minúscula (a-z)  
-- ✓ Pelo menos 1 número (0-9)
-- ✓ Pelo menos 1 caractere especial (@$!%*?&)
+### Experiência do Usuário
+- **Mensagens de erro** claras e específicas
+- **Alertas visuais** para problemas de validação
+- **Transições suaves** entre estados
+- **Ícones e ilustrações** para melhor engajamento
 
-🌐 Navegadores Suportados
+## 📋 Requisitos de Senha
+
+A senha deve atender aos seguintes critérios:
+
+| Requisito | Exemplo |
+|-----------|---------|
+| Mínimo 8 caracteres | 8 ou mais caracteres |
+| 1 letra maiúscula | A-Z |
+| 1 letra minúscula | a-z |
+| 1 número | 0-9 |
+| 1 caractere especial | @$!%*?& |
+
+## 🌐 Navegadores Suportados
 
 - Chrome (versões recentes)
 - Firefox (versões recentes)
 - Safari (versões recentes)
 - Edge (versões recentes)
+- Navegadores mobile (iOS Safari, Chrome Mobile)
 
-📄 Licença
+## 📄 Licença
 
-Este projeto está sob a licença MIT. Sinta-se livre para usar e modificar.
+Este projeto está sob a licença MIT. Sinta-se livre para usar, modificar e distribuir.
 
-🐛 Reportar Problemas
+## 🐛 Reportar Problemas
 
-Encontrou um bug? [Abra uma issue](https://github.com/seu-usuario/login-system/issues) no GitHub.
+Encontrou um bug ou tem uma sugestão de melhoria? [Abra uma issue](https://github.com/seu-usuario/login-system/issues) no GitHub.
 
 ---
 
-**Nota**: Este é um projeto frontend estático para demonstração de interface. Para um sistema completo de login, é necessário integrar com um backend para autenticação real.
-```
+**Nota**: Este é um projeto frontend estático para demonstração de interface. Para um sistema completo de autenticação, é necessário integrar com um backend para autenticação real.
